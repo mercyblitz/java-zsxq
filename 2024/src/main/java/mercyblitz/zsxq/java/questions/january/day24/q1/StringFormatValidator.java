@@ -16,8 +16,6 @@
  */
 package mercyblitz.zsxq.java.questions.january.day24.q1;
 
-import org.apache.commons.lang3.reflect.FieldUtils;
-import org.hibernate.validator.constraintvalidation.HibernateConstraintValidatorContext;
 import org.hibernate.validator.internal.engine.constraintvalidation.ConstraintValidatorContextImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,8 +23,6 @@ import org.slf4j.LoggerFactory;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 import javax.validation.Path;
-import javax.validation.metadata.ConstraintDescriptor;
-
 import java.lang.reflect.Field;
 
 import static mercyblitz.zsxq.java.questions.january.day24.q1.bean.validation.ThreadLocalBeanValidationInterceptor.getValidatedBean;

@@ -28,6 +28,8 @@ import static java.lang.ThreadLocal.withInitial;
 
 /**
  * {@link Thread-Local} 保存校验 Bean 拦截器
+ * <p>
+ * TODO: 注意请在合适的地方调用 {@link #clear()} 放置内存泄漏
  *
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy<a/>
  * @see ValidationInterceptor
@@ -76,4 +78,9 @@ public class ThreadLocalBeanValidationInterceptor implements ValidationIntercept
         }
         return validateBeans.get(size - 1);
     }
+
+    public static void clear() {
+        validatedBeansHolder.remove();
+    }
+
 }

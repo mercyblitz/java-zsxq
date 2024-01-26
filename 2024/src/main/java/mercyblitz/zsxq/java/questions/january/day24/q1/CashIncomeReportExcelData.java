@@ -16,8 +16,6 @@
  */
 package mercyblitz.zsxq.java.questions.january.day24.q1;
 
-import javax.validation.valueextraction.ExtractedValue;
-
 /**
  * TODO
  *

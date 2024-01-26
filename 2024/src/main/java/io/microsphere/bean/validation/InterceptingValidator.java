@@ -22,7 +22,6 @@ import javax.validation.executable.ExecutableValidator;
 import javax.validation.metadata.BeanDescriptor;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
-import java.util.Collections;
 import java.util.Set;
 
 import static java.util.Collections.emptySet;

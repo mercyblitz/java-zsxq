@@ -45,7 +45,7 @@ class InterceptingValidatorFactory implements ValidatorFactory {
 
     @Override
     public Validator getValidator() {
-        return new InterceptingValidator(delegate.getValidator(),validationInterceptors);
+        return new InterceptingValidator(delegate.getValidator(), validationInterceptors);
     }
 
     @Override
