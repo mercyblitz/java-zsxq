@@ -1,0 +1,18 @@
+plugins {
+    id "java-library"
+}
+
+description = "2024 年问答互动"
+
+dependencies {
+
+    implementation("org.apache.commons:commons-lang3")
+
+    implementation("org.slf4j:slf4j-api")
+
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
+
+    implementation("org.hibernate:hibernate-core")
+    implementation("org.hibernate.validator:hibernate-validator")
+}
