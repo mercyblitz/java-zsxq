@@ -47,6 +47,13 @@ public class StringFormatValidator implements ConstraintValidator<StringFormat, 
         this.stringFormat = stringFormat;
     }
 
+    public boolean isValid(String value, Object container, ConstraintValidatorContext context) {
+        // Path : ""
+        // Path : "statisticMonth"
+        // Path : "abc."
+        return false;
+    }
+
     @Override
     public boolean isValid(String value, ConstraintValidatorContext context) {
         if (context instanceof ConstraintValidatorContextImpl) {

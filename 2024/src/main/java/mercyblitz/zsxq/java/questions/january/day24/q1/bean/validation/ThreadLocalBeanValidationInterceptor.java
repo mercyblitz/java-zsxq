@@ -60,6 +60,16 @@ public class ThreadLocalBeanValidationInterceptor implements ValidationIntercept
         unbind(object);
     }
 
+    @Override
+    public <T> void beforeValidateReturnValue(T object, Method method, Object returnValue, Class<?>... groups) {
+        bind(object);
+    }
+
+    @Override
+    public <T> void afterValidateReturnValue(T object, Method method, Object returnValue, Set<ConstraintViolation<T>> constraintViolations, Throwable error, Class<?>... groups) {
+        unbind(object);
+    }
+
     private static void bind(Object object) {
         List<Object> validateBeans = validatedBeansHolder.get();
         validateBeans.add(object);
