@@ -12,6 +12,7 @@ dependencies {
 
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-actuator")
+    implementation("org.springframework.batch:spring-batch-core")
 
     implementation("org.hibernate:hibernate-core")
     implementation("org.hibernate.validator:hibernate-validator")
