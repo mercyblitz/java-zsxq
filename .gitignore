@@ -78,5 +78,8 @@ compiler/.gradle/*
 # Apollo
 config-cache/
 
+# Gradle
+out/
+
 # others
 build.txt
